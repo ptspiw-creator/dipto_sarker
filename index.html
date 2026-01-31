@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> তোমার জন্য বিশেষ কিছু </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ভাসমান হৃদয় -->
+    <div class="hearts" id="heartsContainer"></div>
+    
+    <!-- প্রথম সেকশন -->
+    <section id="welcome">
+        <h1>হ্যালো প্রিয় ❤️</h1>
+        <p class="subtitle">একটি বিশেষ জায়গা শুধু তোমার জন্য...</p>
+        <button class="love-button" onclick="nextSection()">
+            শুরু করি 💝
+        </button>
+    </section>
+    
+    <!-- স্মৃতির গ্যালারি -->
+    <section id="memories">
+        <h2> তুমি 📸</h2>
+        <div class="photo-grid">
+            <img src="photo1.jpg" onclick="showMemory(1)" alt="আমাদের স্মৃতি 1">
+            <img src="photo2.jpg" onclick="showMemory(2)" alt="আমাদের স্মৃতি 2">
+            <img src="photo3.jpg" onclick="showMemory(3)" alt="আমাদের স্মৃতি 3">
+            <img src="photo4.jpg" onclick="showMemory(4)" alt="আমাদের স্মৃতি 4">
+        </div>
+        <button class="love-button" onclick="nextSection()">
+            পরের অংশে যাই 🌹
+        </button>
+    </section>
+    
+    <!-- প্রপোজ সেকশন -->
+    <section id="proposal">
+        <h2>তোমাকে একটি খুবই গুরুত্বপূর্ণ প্রশ্ন আছে... 💌</h2>
+        <p class="proposal-text">
+            এই মুহূর্তের জন্য আমি অনেকদিন অপেক্ষা করছিলাম...
+        </p>
+        <button class="love-button" onclick="showProposal()">
+            ক্লিক করুন জানতে চাইতে 💖
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
